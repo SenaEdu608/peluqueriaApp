@@ -1,2 +1,2 @@
 Repositorio del proyecto:
-https://github.com/Spiner007/peluqueriaApp.git
+https://github.com/SenaEdu608/peluqueriaApp.git
