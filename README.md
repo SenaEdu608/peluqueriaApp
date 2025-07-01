@@ -44,7 +44,7 @@ mvn spring-boot:run
 ```
 
 ## 🔗 Repositorio del proyecto
-[https://github.com/Spiner007/peluqueriaApp.git](https://github.com/Spiner007/peluqueriaApp.git)
+[https://github.com/SenaEdu608/peluqueriaApp.git](https://github.com/SenaEdu608/peluqueriaApp.git)
 
 ### Ejecución del Módulo Frontend
 
