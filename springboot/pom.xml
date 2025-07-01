@@ -1,0 +1,74 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- Versión del modelo de proyecto Maven -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Identificador del proyecto -->
+    <groupId>com.peluqueriaapp</groupId>
+    <artifactId>peluqueriaApp</artifactId>
+    <version>1.0.0</version>
+
+    <!-- Tipo de paquete generado (jar ejecutable con Spring Boot) -->
+    <packaging>jar</packaging>
+
+    <!-- Información descriptiva -->
+    <name>peluqueriaApp</name>
+    <description>Backend para login y registro</description>
+
+    <!-- Hereda configuración del starter-parent de Spring Boot -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.0</version>
+        <relativePath/> <!-- Usa la versión especificada sin importar la ruta -->
+    </parent>
+
+    <!-- Configuración de propiedades globales del proyecto -->
+    <properties>
+        <!-- Versión de Java usada para compilar -->
+        <java.version>17</java.version>
+    </properties>
+
+    <!-- Dependencias necesarias para el proyecto -->
+    <dependencies>
+
+        <!-- Starter para crear APIs web REST -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- Starter para trabajar con JPA (Hibernate) y base de datos -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <!-- Driver de conexión para MySQL -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+        </dependency>
+
+        <!-- API de persistencia Jakarta (JPA estándar) -->
+        <dependency>
+            <groupId>jakarta.persistence</groupId>
+            <artifactId>jakarta.persistence-api</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+
+    </dependencies>
+
+    <!-- Configuración del build y plugins -->
+    <build>
+        <plugins>
+            <!-- Plugin de Spring Boot para empaquetar el proyecto -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>

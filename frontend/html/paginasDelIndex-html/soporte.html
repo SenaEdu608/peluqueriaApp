@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soporte</title>
+  <link rel="stylesheet" href="/frontend/css/index-css/paginas-extras/soporte.css" />
+</head>
+
+
+<body>
+  <!-- Contenedor principal del contenido -->
+  <main class="containerSoporte">
+    
+    <!-- Encabezado de la página -->
+    <header>
+      <h2>Contactar Soporte</h2>
+    </header>
+
+    <!-- Formulario para enviar un mensaje al soporte -->
+    <form id="supportForm" novalidate>
+      <label class="lSupport" for="nombre">Nombre:</label>
+      <input type="text" id="soporte-nombre" class="iSupport" name="nombre" />
+
+      <label class="lSupport" for="correo">Correo Electrónico</label>
+      <input type="email" id="soporte-correo" class="iSupport" name="correo"/>
+
+      <label class="lSupport" for="mensaje">Mensaje</label>
+      <textarea id="soporte-message" class="tText" name="mensaje" rows="5"></textarea>
+
+      <!-- Botón para enviar el formulario -->
+      <button type="submit" class="send" id="send">Enviar Mensaje</button>
+    </form>
+
+    <!-- Enlace de retorno a la página principal -->
+    <nav class="containerLink" aria-label="Navegación secundaria">
+      <a href="/frontend/html/index.html" class="return">Volver al inicio</a>
+    </nav>
+  </main>
+</body>
+</html>

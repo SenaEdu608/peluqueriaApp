@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bienvenido</title>
+
+
+  <!-- Navegación superior -->
+  <link rel="stylesheet" href="/frontend/css/deshboard-css/nav/nav.css"/>
+  
+  <!-- Páginas del dashboard -->
+  <link rel="stylesheet" href="/frontend/css/deshboard-css/paginas-deshboard/carrucel.css"/>
+  <link rel="stylesheet" href="/frontend/css/deshboard-css/paginas-deshboard/cita.css"/>
+  <link rel="stylesheet" href="/frontend/css/deshboard-css/paginas-deshboard/serviciosDeshboard.css">
+  <link rel="stylesheet" href="/frontend/css/deshboard-css/paginas-deshboard/empleado.css"/>
+  <link rel="stylesheet" href="/frontend/css/deshboard-css/paginas-deshboard/mensaje.css"/>
+
+  <!-- Componentes de la barra lateral y tareas -->
+  <link rel="stylesheet" href="/frontend/css/deshboard-css/link-barra-tareas-css/cambiarDatos.css"/>
+  <link rel="stylesheet" href="/frontend/css/deshboard-css/link-barra-tareas-css/historialCitas.css">
+  <link rel="stylesheet" href="/frontend/css/deshboard-css/barra-tareas/barraTareas.css"/>
+</head>
+
+<body>
+
+  <!-- Encabezado de la página con navegación principal -->
+  <header class="contenedor-navegacion">
+    <nav class="navegacion">
+      <!-- Nombre de la aplicación que al hacer clic muestra la sección principal -->
+      <a href="#" onclick="mostrarSeccion('principal')" class="peluqueria-text">Peluquería Denis</a>
+      <ul>
+        <!-- Enlaces de navegación del dashboard -->
+        <li><a href="#" id="b-tarea">PERFIL</a></li>
+        <li><a href="#" onclick="mostrarSeccion('cita')">CITA</a></li>
+        <li><a href="#" onclick="mostrarSeccion('serviciosDeshboard')">SERVICIOS</a></li>
+        <li><a href="#" onclick="mostrarSeccion('empleado')">EMPLEADO</a></li>
+        <li><a href="#" onclick="mostrarSeccion('pago')">PAGO</a></li>
+        <li><a href="/frontend/html/index.html">SALIR</a></li> <!-- Redirecciona al login -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenedor para mostrar mensajes -->
+  <div id="mensaje-p" class="mensaje-p"></div>
+
+  <!-- Barra lateral de prfil del usuario -->
+  <aside id="barra-lateral"></aside>
+
+  <!-- Contenido principal del dashboard -->
+  <main id="principal" class="principal"></main>
+
+  <!-- Secciones dinámicas del dashboard, ocultas por defecto -->
+  <section id="dinamico" class="dinamico oculto"></section>
+  <section id="cambiarDatos" class="cambiarDatos oculto"></section>
+  <section id="cita" class="cita oculto"></section>
+  <section id="serviciosDeshboard" class="serviciosDeshboard oculto"></section>
+  <section id="empleado" class="empleado oculto"></section>
+  <section id="pago" class="pago oculto"></section>
+
+  
+  <!-- Scripts para las distintas páginas del dashboard -->
+  <script src="/frontend/js/deshboard-js/paginas-deshboard/carrucel.js"></script>
+  <script src="/frontend/js/deshboard-js/paginas-deshboard/cita.js"></script>
+  <script src="/frontend/js/deshboard-js/paginas-deshboard/serviciosDeshboard.js"></script>
+  <script src="/frontend/js/deshboard-js/paginas-deshboard/empleado.js"></script>
+  <script src="/frontend/js/deshboard-js/paginas-deshboard/mensaje.js"></script>
+
+  <!-- Lógica para mostrar u ocultar secciones del dashboard -->
+  <script src="/frontend/js/deshboard-js/mostrar-deshboard/mostrarSecciones.js"></script>
+
+  <!-- Script modular de la barra de tareas, cargado como módulo ES6 -->
+  <script type="module" src="/frontend/js/deshboard-js/barra-tareas-deshboard/barraTareas.js"></script>
+
+</body>
+</html>

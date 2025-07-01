@@ -1,0 +1,46 @@
+<div class="modal1">
+  <!-- Contenedor del contenido del modal -->
+  <div class="modal-content1">
+
+    <!-- Botón para cerrar el modal, con atributo data-close para facilitar el JS -->
+    <span class="close-button1" data-close>x</span>
+
+    <!-- Formulario de inicio de sesión sin validación nativa -->
+    <form id="loginregister" novalidate>
+      <h2>Iniciar Sesión</h2>
+
+      <!-- Campo correo electrónico -->
+      <label class="labelLogin" for="correo">Correo Electrónico:</label>
+      <input type="email" id="login-correo" class="inputLogin" name="correo" placeholder="Tucorreo@domino.com" required>
+
+      <!-- Campo contraseña -->
+      <label class="labelLogin" for="contrasena">Contraseña:</label>
+      <input type="password" id="login-contrasena" class="inputLogin" name="contrasena" placeholder="********" required>
+
+      <br><br>
+
+      <!-- Botón para enviar el formulario -->
+      <button type="submit" class="buttonLogin" id="buttonLogin">Ingresar</button>
+
+      <!-- Enlace para ir al registro si no tiene cuenta -->
+      <div class="url-div-register">
+        <p class="register-text">¿No tienes cuenta?</p>
+        <a href="#" class="register-link" id="urlRegister">Registrarse</a>
+      </div>
+
+      <hr class="linea-primera">
+
+      <!-- Contenedor para mostrar mensajes dinámicos (errores, confirmaciones, etc.) -->
+      <div id="mensaje" class="mensaje"></div>
+
+      <hr class="linea-segunda">
+
+      <!-- Enlaces para recuperación de contraseña y soporte -->
+      <div class="recuperacion">
+        <a href="/frontend/html/paginasDelIndex-html/recuperarContrasena.html" class="enlace">¿Olvidaste tu contraseña?</a>
+        <a href="/frontend/html/paginasDelIndex-html/soporte.html" class="enlace">¿Necesitas soporte?</a>
+      </div>
+    </form>
+
+  </div>
+</div>

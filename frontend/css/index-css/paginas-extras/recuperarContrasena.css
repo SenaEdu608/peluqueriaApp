@@ -1,0 +1,154 @@
+
+body {
+  font-family: Arial, sans-serif; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  min-height: 100vh; 
+  margin: 0; 
+  background-color: #f2f2f2; 
+  background-image: url("/frontend/imagenes/pexels-caleboquendo-3162022.jpg"); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+}
+
+
+.containerRecuperar {
+  background-color: #0b0a0a; 
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; 
+  max-width: 400px; /
+  
+}
+
+
+h2 {
+  text-align: center; 
+  color: #ffffff; 
+}
+
+p {
+ color: gray;
+ text-align: center;
+}
+
+
+
+.lRecovery {
+  display: block; 
+  margin-bottom: 0.5rem; 
+  color: #ffffff; 
+}
+
+
+.iRecovery {
+  width: 94%; 
+  padding: 0.75rem; 
+  border-radius: 4px; 
+  border: 1px solid #ccc; 
+  margin-bottom: 1rem;
+}
+
+
+.btn {
+  width: 100%; 
+  padding: 0.75rem; 
+  background-color: #13a118; 
+  border: none; 
+  border-radius: 4px; 
+  color: white; 
+  font-weight: bold; 
+  cursor: pointer; 
+  font-size: 16px;
+  transition: background-color 0.3s; 
+}
+
+
+.btn:hover {
+ background-color: #09983d; 
+}
+
+
+.containerLink {
+  text-align: center; 
+  margin-top: 20px;
+}
+
+
+.link {
+  color: #0f96f0; 
+  text-decoration: none; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+
+.link:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 1rem;
+    background-position: center top;
+    margin: 0;
+  }
+
+  .container {
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%; 
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .lRecovery {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .iRecovery {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    box-sizing: border-box;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 6px;
+  }
+
+  .containerLink {
+    margin-top: 1.8rem;
+  }
+
+  .link {
+    font-size: 1.1rem;
+  }
+}
+

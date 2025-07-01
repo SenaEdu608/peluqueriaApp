@@ -1,0 +1,23 @@
+# Plan Técnico: Módulo Login y Registro - peluqueriaApp
+
+## Nombre 
+John Jairo Zamudio Agudelo
+
+## Ficha
+2977467
+
+## Tecnología seleccionada
+- Framework: Spring Boot 3.2.0
+- Lenguaje: Java 17 (jdk-17.0.15)
+- Gestor de dependencias: Apache Maven 3.8.6
+- Base de datos: MySQL 8, BD llamada `peluqueria_db`
+- IDE utilizado: visual studio code
+
+## Objetivo
+Desarrollar los módulos de registro e inicio de sesión para una aplicación web de peluquería, 
+integrando el frontend existente con el backend desarrollado en Spring Boot.
+
+## Módulos desarrollados
+- Registro de usuarios: `/api/usuarios/register`
+- Login de usuarios: `/api/usuarios/login`
+

@@ -1,0 +1,146 @@
+.servicios {
+  width: 100vw;
+  min-height: 100vh;
+background-color: #ecf0f1;
+  padding: 2rem;
+  box-sizing: border-box;
+  scroll-margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.titulo-servicios {
+   width: 100%;
+  font-size: 2.3rem;
+  text-align: center;
+  color: #2c3e50; 
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  padding: 1.2rem 2rem;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg, #a3a3a3, #ffffff);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: -33px;
+}
+
+
+
+
+
+
+
+.servicios-bg {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 2rem;
+  width: 100%;
+  max-width: 1300px;
+background-color: #ecf0f1;
+  padding: 2rem;
+}
+
+
+.servicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+
+
+.imagen-container {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.imagen-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+
+
+
+.nombre-servicio {
+  margin-top: 2.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #2c3e50;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  position: relative;
+  user-select: none;
+  padding: 1rem 0 0.5rem;
+  background-color: transparent;
+}
+
+
+.nombre-servicio::before {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 3px;
+  background: linear-gradient(to right, #f1c40f, #f39c12);
+  margin: 0 auto 1rem;
+  border-radius: 2px;
+}
+
+
+.nombre-servicio::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(to right, #5dade2, #3498db);
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .servicios-bg {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 1.5rem;                 
+    padding: 1rem 1.5rem;        
+    max-width: 100%;             
+  }
+
+  .servicio {
+    padding: 1rem 0.5rem;        
+  }
+
+  .nombre-servicio {
+    font-size: 1.6rem;           
+  }
+
+  .imagen-container {
+    aspect-ratio: 16 / 9;        
+    border-radius: 12px;
+  }
+
+  .imagen-container img {
+    object-fit: cover;
+  }
+}

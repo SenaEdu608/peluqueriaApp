@@ -1,0 +1,6 @@
+com\peluqueriaapp\repository\UsuarioRepository.class
+com\peluqueriaapp\dto\LoginRequest.class
+com\peluqueriaapp\controller\UsuarioController.class
+com\peluqueriaapp\model\Usuario.class
+com\peluqueriaapp\PeluqueriaAppApplication.class
+com\peluqueriaapp\service\UsuarioService.class

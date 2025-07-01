@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pagina-Inicio</title>
+
+ <!-- Estilos -->
+<link rel="stylesheet" href="/frontend/css/index-css/navegacion-inicio-html/nav.css" />
+<link rel="stylesheet" href="/frontend/css/index-css/modales-login-register-css/loginModal.css" />
+<link rel="stylesheet" href="/frontend/css/index-css/modales-login-register-css/registerModal.css" />
+<link rel="stylesheet" href="/frontend/css/index-css/seeciones-html/servicios.css" />
+<link rel="stylesheet" href="/frontend/css/index-css/seeciones-html/comoFunciona.css" />
+<link rel="stylesheet" href="/frontend/css/index-css/seeciones-html/textPrincipal.css"/>
+<link rel="stylesheet" href="/frontend/css/index-css/seeciones-html/footer.css"/>
+<link rel="stylesheet" href="/frontend/css/index-css/cookies/cookiesModales.css"/>
+
+</head>
+
+<body>
+
+  <!--Cabecera con navegación principal-->
+  <header class="contenedor-navegacion">
+    <nav class="navegacion">
+      <!-- texto de la peluquería con ancla hacia la sección principal -->
+      <a href="#textPrincipal" class="peluqueria-text">Peluquería Denis</a>
+      <ul>
+        <!-- Botones que activan los modales de login y registro -->
+        <li><a href="#" id="loginLink">INGRESAR</a></li>
+        <li><a href="#" id="registerLink">REGISTRO</a></li>
+
+        <!-- Enlaces a secciones del landing page mediante anclas -->
+        <li><a href="#servicios">SERVICIOS</a></li>
+        <li><a href="#comoFunciona">COMO</a></li>
+        <li><a href="#footer">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--  Contenedores para modales dinámicos -->
+
+  <!-- Contenedor para mostrar el modal de cookies -->
+  <div id="cookieModal"></div>
+
+  <!-- Contenedor donde se inyectan dinámicamente los modales de login y registro -->
+  <div id="modal-container"></div>
+
+  <!--Contenido principal de la página-->
+  <main>
+    <!-- Sección principal: bienvenida -->
+    <section id="textPrincipal" class="textPrincipal"></section>
+
+    <!-- Sección que muestra los servicios disponibles -->
+    <section id="servicios" class="servicios"></section>
+
+    <!-- Sección explicativa de cómo funciona el sistema -->
+    <section id="comoFunciona" class="comoFunciona"></section>
+  </main>
+
+  <!-- Pie de página con información de contacto -->
+  <footer id="footer" class="footer"></footer>
+
+  <!--Scripts JavaScript -->
+
+
+<script src="/frontend/js/paginas-index-js/modales-login-register-JS/loginModal.js"></script>
+<script src="/frontend/js/paginas-index-js/modales-login-register-JS/registerModal.js"></script>
+<script src="/frontend/js/paginas-index-js/secciones-pagina-inicio-JS/textPrincipal.js"></script>
+<script src="/frontend/js/paginas-index-js/secciones-pagina-inicio-JS/servicios.js"></script>
+<script src="/frontend/js/paginas-index-js/secciones-pagina-inicio-JS/comoFunciona.js"></script>
+<script src="/frontend/js/paginas-index-js/secciones-pagina-inicio-JS/footer.js"></script>
+<script src="/frontend/js/paginas-index-js/secciones-pagina-inicio-JS/cookieModal.js"></script>
+
+</body>
+</html>
